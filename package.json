@@ -39,7 +39,7 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "puppeteer": "10.1.0",
+    "puppeteer": "18.0.2",
     "SyntheticsLogger": "sixleaveakkm/aws-synthetics-logger-local",
     "yargs": "17.5.1"
   },
