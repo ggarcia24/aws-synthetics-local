@@ -1,31 +1,50 @@
 {
-  "name": "@sixleaveakkm/aws-synthetics-local",
-  "version": "0.2.0",
+  "name": "@ggarcia24/aws-synthetics-local",
+  "version": "1.0.0",
   "description": "dev library for aws synthetics canary",
   "main": "index.js",
   "scripts": {
+    "lint": "npm run eslint",
+    "eslint": "eslint --ext=.js,.mjs,.ts --max-warnings=0",
+    "prettier": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sixleaveakkm/aws-synthetics-local.git"
+    "url": "https://github.com/sixleaveakkm/aws-synthetics-local.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ggarcia24/aws-synthetics-local/issues"
+  },
+  "homepage": "https://github.com/ggarcia24/aws-synthetics-local",
+  "bin": {
+    "canary-run": "./bin/canary-run.js"
+  },
+  "engines": {
+    "node": "=14"
   },
   "keywords": [
     "synthetics",
     "aws"
   ],
-  "author": "sixleaveakkm",
+  "author": {
+    "name": "sixleaveakkm",
+    "url": "https://github.com/sixleaveakkm"
+  },
+  "contributors": [
+    {
+      "name": "Gonzalo Garcia",
+      "email": "gonzalogarcia243@gmail.com"
+    }
+  ],
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/sixleaveakkm/aws-synthetics-local/issues"
-  },
-  "homepage": "https://github.com/sixleaveakkm/aws-synthetics-local#readme",
   "dependencies": {
-    "puppeteer": "5.2.0",
-    "SyntheticsLogger": "npm:@sixleaveakkm/aws-synthetics-logger-local@0.1.6",
-    "yargs": "^16.0.3"
+    "puppeteer": "10.1.0",
+    "SyntheticsLogger": "sixleaveakkm/aws-synthetics-logger-local",
+    "yargs": "17.5.1"
   },
-  "bin": {
-    "canary-run": "./bin/canary-run.js"
+  "devDependencies": {
+    "eslint": "8.23.1",
+    "prettier": "2.7.1"
   }
 }
